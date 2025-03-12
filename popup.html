@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>文件保存助手</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    label {
+      font-weight: 500;
+      margin-bottom: 4px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    .status {
+      color: #1e8e3e;
+      font-size: 14px;
+      margin-top: 8px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <label for="directory">保存目录</label>
+      <input type="text" id="directory" placeholder="请输入保存文件的目录路径">
+    </div>
+    <button id="save">保存设置</button>
+    <div id="status" class="status">设置已保存！</div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

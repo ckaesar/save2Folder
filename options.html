@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>文件保存助手 - 设置</title>
+  <style>
+    body {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      font-family: system-ui, -apple-system, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    h1 {
+      color: #1a73e8;
+      margin-bottom: 24px;
+    }
+    label {
+      font-weight: 500;
+      margin-bottom: 8px;
+      display: block;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 14px;
+    }
+    button {
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      align-self: flex-start;
+    }
+    button:hover {
+      background-color: #1557b0;
+    }
+    .status {
+      color: #1e8e3e;
+      font-size: 14px;
+      margin-top: 8px;
+      display: none;
+    }
+    .help-text {
+      color: #5f6368;
+      font-size: 14px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>文件保存助手设置</h1>
+    <div>
+      <label for="directory">保存目录</label>
+      <input type="text" id="directory" placeholder="请输入保存文件的目录路径">
+      <p class="help-text">请输入完整的目录路径，例如：C:\Downloads\SavedFiles</p>
+    </div>
+    <button id="save">保存设置</button>
+    <div id="status" class="status">设置已保存！</div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
